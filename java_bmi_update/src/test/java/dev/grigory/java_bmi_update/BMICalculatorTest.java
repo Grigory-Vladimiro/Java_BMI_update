@@ -14,4 +14,8 @@ public class BMICalculatorTest {
     public void testCalculateBMI_InvalidInput() {
     assertThrows(IllegalArgumentException.class, () -> BMICalculator.calculateBMI(-10, 1.75));
     }
+    @Test
+    public void testGetBMICategory_Normal() {
+    assertEquals("Normal weight", BMICalculator.getBMICategory(22.0));
+}
 }
