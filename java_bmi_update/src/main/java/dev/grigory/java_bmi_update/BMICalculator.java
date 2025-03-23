@@ -7,4 +7,8 @@ public class BMICalculator {
         }
         return Math.round((weight / (height * height)) * 100.0) / 100.0;
     }
+    public static String getBMICategory(double bmi) {
+        if (bmi < 25) return "Normal weight";
+        return "Unknown";
+    }
 }
