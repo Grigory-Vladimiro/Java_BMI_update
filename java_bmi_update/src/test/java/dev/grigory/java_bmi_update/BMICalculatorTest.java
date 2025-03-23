@@ -17,5 +17,9 @@ public class BMICalculatorTest {
     @Test
     public void testGetBMICategory_Normal() {
     assertEquals("Normal weight", BMICalculator.getBMICategory(22.0));
-}
+    }
+    @Test
+    public void testGetBMICategory_ObeseI() {
+    assertEquals("Obesity class I", BMICalculator.getBMICategory(32.0));
+    }
 }
