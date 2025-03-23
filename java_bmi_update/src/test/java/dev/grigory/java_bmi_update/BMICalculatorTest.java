@@ -22,4 +22,15 @@ public class BMICalculatorTest {
     public void testGetBMICategory_ObeseI() {
     assertEquals("Obesity class I", BMICalculator.getBMICategory(32.0));
     }
+    @Test
+    public void testAllBMICategories() {
+    assertEquals("Severe Thinness", BMICalculator.getBMICategory(15.0));
+    assertEquals("Moderate Thinness", BMICalculator.getBMICategory(16.5));
+    assertEquals("Mild Thinness", BMICalculator.getBMICategory(18.0));
+    assertEquals("Normal weight", BMICalculator.getBMICategory(22.0));
+    assertEquals("Overweight", BMICalculator.getBMICategory(27.0));
+    assertEquals("Obesity class I", BMICalculator.getBMICategory(32.0));
+    assertEquals("Obesity class II", BMICalculator.getBMICategory(37.0));
+    assertEquals("Obesity class III", BMICalculator.getBMICategory(45.0));
+    }
 }
